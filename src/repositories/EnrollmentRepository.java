@@ -1,7 +1,7 @@
 package repositories;
 
 import models.Enrollment;
-import java.util.List;
+import java.util.*;
 
 public interface EnrollmentRepository {
 
