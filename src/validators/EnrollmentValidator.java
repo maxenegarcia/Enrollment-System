@@ -4,7 +4,7 @@ import models.Course;
 import models.Student;
 import strategies.EnrollmentValidationStrategy;
 
-import java.util.List;
+import java.util.*;
 
 public class EnrollmentValidator {
 

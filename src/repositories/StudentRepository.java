@@ -1,7 +1,7 @@
 package repositories;
 
 import models.Student;
-import java.util.List;
+import java.util.*;
 
 public interface StudentRepository {
 
