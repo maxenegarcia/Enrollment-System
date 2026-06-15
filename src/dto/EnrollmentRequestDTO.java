@@ -1,4 +1,6 @@
-import java.util.List;
+package dto;
+
+import java.util.*;
 
 public class EnrollmentRequestDTO {
     public String studentId;
