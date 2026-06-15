@@ -1,11 +1,21 @@
-package repositories;
+package strategies;
 
-import models.Enrollment;
+import models.Course;
+import models.Student;
+package strategies;
+
+import models.Course;
+import models.Student;
 import java.util.List;
 
-public interface EnrollmentRepository {
+public interface EnrollmentValidationStrategy {
 
-    void save(Enrollment enrollment);
+    void validate(Student student,
+                  List<Course> courses);
+}
 
-    List<Enrollment> findAll();
+public interface EnrollmentValidationStrategy {
+
+    void validate(Student student,
+                  List<Course> courses);
 }
