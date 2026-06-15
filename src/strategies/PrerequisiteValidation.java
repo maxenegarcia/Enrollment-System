@@ -11,9 +11,5 @@ public class PrerequisiteValidation
     @Override
     public void validate(Student student,
                          List<Course> courses) {
-
-        System.out.println(
-            "Prerequisite validation passed."
-        );
     }
 }

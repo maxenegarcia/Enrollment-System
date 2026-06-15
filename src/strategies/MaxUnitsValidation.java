@@ -5,10 +5,12 @@ import models.Student;
 
 import java.util.List;
 
-public class MaxUnitsValidation implements EnrollmentValidationStrategy {
+public class MaxUnitsValidation
+        implements EnrollmentValidationStrategy {
 
     @Override
-    public void validate(Student student, List<Course> courses) {
+    public void validate(Student student,
+                         List<Course> courses) {
 
         int totalUnits = 0;
 
@@ -18,7 +20,7 @@ public class MaxUnitsValidation implements EnrollmentValidationStrategy {
 
         if (totalUnits > 18) {
             throw new RuntimeException(
-                "Enrollment failed: Maximum 18 units allowed."
+                    "Maximum allowed units exceeded."
             );
         }
     }
