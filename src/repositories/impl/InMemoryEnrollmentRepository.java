@@ -1,10 +1,23 @@
-package strategies;
+package repositories.impl;
 
-import models.Course;
-import models.Student;
+import models.Enrollment;
+import repositories.EnrollmentRepository;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public interface EnrollmentValidationStrategy {
+public class InMemoryEnrollmentRepository
+        implements EnrollmentRepository {
 
-    void validate(Student student, List<Course> courses);
+    private List<Enrollment> enrollments = new ArrayList<>();
+
+    @Override
+    public void save(Enrollment enrollment) {
+        enrollments.add(enrollment);
+    }
+
+    @Override
+    public List<Enrollment> findAll() {
+        return enrollments;
+    }
 }
